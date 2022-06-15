@@ -13,7 +13,7 @@ public class Case4 {
 		driver.get("https://in.puma.com");
 		Thread.sleep(4000);
 		driver.findElement(By.xpath("//input[contains(@placeholder,'puma') and contains (@class,'validated')]")).sendKeys("shoes");
-	
+	//ythyhyhy
 
 	}
 
