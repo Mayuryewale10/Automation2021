@@ -1,0 +1,29 @@
+package Xpath;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Timeouts;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Isdisplayed {
+	
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		driver.get("https://www.instagram.com");
+		WebElement news =driver.findElement(By.xpath("//h2[.='news']"));
+		Isdisplayed status=new Isdisplayed();
+		System.out.println(status);
+		
+
+	}
+
+	
+
+}

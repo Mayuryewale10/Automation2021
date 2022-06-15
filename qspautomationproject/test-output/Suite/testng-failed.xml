@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testngflags.Class1">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- testngflags.Class1 -->
+      <class name="testngflags.Class4">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- testngflags.Class4 -->
+      <class name="testngflags.Class2">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- testngflags.Class2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
